@@ -44,7 +44,7 @@ def read_raw_data():
     
     # merge the month count to the original data
     df_all = pd.merge(df_all, months_count, how='left', left_on='item', right_on='item')
-    df_all.to_csv(r'..\data\sales_projection_months.csv', index=False)
+    df_all.to_csv(r'..\data\sales_all.csv', index=False)
     return df_all
 
 #df_all = read_raw_data()
